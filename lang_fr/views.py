@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.utils.translation import activate, gettext as _
 
 def french(request):
-    # translate in franch
+    # translate in french
     activate('fr')
     transl = _('hello')
     transl2 = _("In this Python Django tutorial I will take you through the basics of setting up internationalization in Django so that you your.")

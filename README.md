@@ -5,5 +5,5 @@ Demo - Translation in Django
 Translate in french
 -------------------  
 A simple translation example  
-    * Case one - in views.py: import activate() and gettext()  
-    * Case two - in template: load i18n, use language tag to activate franch language, and use translate tag  
+    * Case one - in views.py: import _activate()_ and _gettext()_  
+    * Case two - in template: load _i18n_, use _language tag_ to activate franch language, and use _translate tag_  

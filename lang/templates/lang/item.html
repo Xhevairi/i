@@ -1,0 +1,18 @@
+{% extends 'lang/base.html' %}
+
+{% load i18n %}
+
+
+{% block content %}
+ 
+    <div class="container">
+      <!-- content -->
+      {% translate 'hello' %}
+      <br>
+      <p>
+        {% translate 'Python Django - Multiple Languages - Internationalization - Part 1' %}
+      </p>
+      <!-- ./end -->
+    </div>
+    
+{% endblock content %}

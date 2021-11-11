@@ -1,0 +1,21 @@
+{% extends 'lang/base.html' %}
+
+{% load i18n %}
+
+
+{% block content %}
+ 
+    <div class="container">
+      <h2>You are in home page</h2>
+      <p>When you select the language from any menu items, you should be redirected to domain_name/en/ browser(in development: http://127.0.0.1:8000/en/). This is becouse 'en' is the default language.</p>
+      <!-- content -->
+      {% translate 'Hello, ' %}
+      {{ trans }}
+      <br>
+      <!-- article one -->
+      {% translate 'In this Python Django tutorial I will take you through the basics of setting up internationalization in Django so that you your.' %}
+      <!-- ./end -->
+    </div>
+    
+{% endblock content %}
+  

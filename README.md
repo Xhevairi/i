@@ -15,3 +15,10 @@ See Django Documentation for Internacionalization
 Clone this project then run:  
     - py manage.py makemessages --all  
     - py manage.py compilemessages  
+
+Accessing Rosetta  
+-----------------  
+
+After creating superuser, login as admin. Then, in Django administration, click 'Translation'.  
+
+Try it and good luck!

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-04 15:38+0100\n"
-"PO-Revision-Date: 2021-11-09 11:32+0000\n"
+"PO-Revision-Date: 2021-11-17 14:59+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -1258,3 +1258,7 @@ msgstr ""
 #: .\lang\templates\item.html
 msgid "Python Django - Multiple Languages - Internationalization - Part 1"
 msgstr "Python Django - Langages multiples - Internationalisation - Partie 1"
+
+#: .\i_venv\Lib\site-packages\django\contrib\admin\templates\registration\logged_out.html
+msgid "Thanks for spending some quality time with the Web site today."
+msgstr "Merci d'avoir passé du temps de qualité avec le site Web aujourd'hui."

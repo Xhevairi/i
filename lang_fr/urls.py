@@ -3,5 +3,6 @@ from . import views
 
 app_name = 'lang_fr'
 urlpatterns = [
-    path('french/', views.french, name='french')
+    path('french/', views.french, name='french'),
+    path('elsefrench/', views.elsefrench, name='elsefrench'),
 ]

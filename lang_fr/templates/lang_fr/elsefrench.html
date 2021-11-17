@@ -1,0 +1,67 @@
+
+{% extends 'lang_fr/base.html' %}
+
+{% load i18n %}
+
+    {% block content %}
+      <div class="container">
+
+          <h1>Translate in french</h1>
+          <p>Application name: lang_fr</p>
+          <p>Look! A simple translation example
+              <ul>
+                  <li>Case one - in views.py: import activate() and gettext()</li>
+                  <li>Case two - in template: load i18n, use language tag to activate franch language, and use translate tag</li>
+                </ul>
+            </p>
+            <h2>Case one: french is activated in views.py</h2>
+            <p>Translation done in views.py:</p>
+            <p>
+                <br>
+                {{transl}}
+                <br>
+                {{ transl2 }}
+        <br>
+        {{transl3}}
+    </p>
+    <h2>Case two</h2>
+    <p>Translation done in template. Two cases are used also:
+        <ul>
+            <li>first: get_current_language as LANGUAGE_CODE </li>
+            <li>second: activate french - language 'fr' and endlanguage</li>
+        </ul>
+    </p>
+<h4>First case</h4>
+<p>From french to current language:
+    <!-- get corrent language -->
+    {% get_current_language as LANGUAGE_CODE %}
+    <br>
+    <!-- Current language: {{ LANGUAGE_CODE }} -->
+    Language code: {{ LANGUAGE_CODE }}
+    <br>Texts is in english. It is translated from english in french in locale/en/django.po:
+    <br> {% translate "Get started with Django" %}</p>
+    <br> Texts is in english. It is translated from english in french in locale/fr/django.po:
+    <br> {% translate "In this Python Django tutorial I will take you through the basics of setting up internationalization in Django so that you your." %}</p>
+    <br> Text is in french. It is translated from english in french in locale/fr/django.po. Translation is done in wies.py, activating french language: 
+    <br>{% translate "Dans ce didacticiel Python Django, je vais vous expliquer les bases de la configuration de l'internationalisation dans Django afin que vous utilisiez votre." %}</p>
+
+    <hr>
+    <hr>
+    <h4>Second case: french is activated using language tag</h4>
+    <!-- activate french lanuage -->
+    {% language 'fr' %}
+    
+    {% get_current_language as LANGUAGE_CODE %}
+    <br>
+    <!-- Current language: {{ LANGUAGE_CODE }} -->
+    Language code: {{ LANGUAGE_CODE }}
+    <br>Texts is in english. It is translated from english in french in locale/en/django.po:
+    <br> {% translate "Get started with Django" %}</p>
+    <br> Texts is in english. It is translated from english in french in locale/fr/django.po:
+    <br> {% translate "In this Python Django tutorial I will take you through the basics of setting up internationalization in Django so that you your." %}</p>
+    <br> Text is in french. It is translated from english in french in locale/fr/django.po. Translation is done in wies.py, activating french language: 
+    <br>{% translate "Dans ce didacticiel Python Django, je vais vous expliquer les bases de la configuration de l'internationalisation dans Django afin que vous utilisiez votre." %}</p>
+    {% endlanguage %}
+    
+    {% endblock content %}
+</div>

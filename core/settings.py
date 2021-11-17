@@ -129,7 +129,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 from django.utils.translation import gettext_lazy as _
 
 # default language
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = config('LANGUAGE_CODE')
 
 # languages
 LANGUAGES = (

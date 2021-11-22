@@ -1225,3 +1225,7 @@ msgstr ""
 #: .\lang\views.py:5
 msgid "hello"
 msgstr ""
+
+#: .\i_venv\Lib\site-packages\django\contrib\admin\templates\registration\logged_out.html
+msgid "Thanks for spending some quality time with the Web site today."
+msgstr "Merci d'avoir passé du temps de qualité avec le site Web aujourd'hui."

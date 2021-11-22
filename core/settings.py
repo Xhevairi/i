@@ -143,3 +143,7 @@ LOCALE_PATHS = [
 
 # add link to Rosetta at the bottom of admin
 ROSETTA_SHOW_AT_ADMIN_PANEL = True
+
+# Check security issues:
+# https://arnopretorius.medium.com/django-web-security-checklist-81ff27ad1f60
+#   $ python manage.py check --deploy

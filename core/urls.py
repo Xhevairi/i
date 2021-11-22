@@ -9,12 +9,11 @@ from django.utils.translation import gettext_lazy as _
 
 urlpatterns = [
     path(_('admin/'), admin.site.urls),
-    path('', include('lang_fr.urls', namespace='lang_fr'))
+    path('', include('lang_fr.urls', namespace='lang_fr')),
 ]
 # adding i18n
 urlpatterns += i18n_patterns(
     path('', include('lang.urls', namespace='lang')),
-    # path('', include('lang_fr.urls', namespace='lang_fr')),
 )
 
 # adding rossetta
